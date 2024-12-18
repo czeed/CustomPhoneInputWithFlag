@@ -55,7 +55,6 @@ const PhoneInputWithFlag = ({ label, defaultValue, required = false, disabled = 
   }));
 
   const error = useMemo(() => {
-    console.log(PhoneUtils.isPhoneValid(phone));
     return !PhoneUtils.isPhoneValid(phone);
   }, [phone]);
 
